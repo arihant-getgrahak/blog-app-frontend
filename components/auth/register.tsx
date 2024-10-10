@@ -46,7 +46,8 @@ export const Register = () => {
         alert(res.data.message);
       }
     } catch (err: Error | any) {
-      alert(err.response.data.message);
+      alert(err?.response?.data?.message);
+      console.log(err?.response?.data?.message);
     }
   };
 

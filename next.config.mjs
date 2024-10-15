@@ -3,9 +3,9 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: "http",
-        hostname: "laravel-blog-backend.test",
-        // hostname: "206.1.58.168",
+        protocol: "https",
+        // hostname: "laravel-blog-backend.test",
+        hostname: "developer.iamstillalive.co",
       },
       {
         protocol:"https",

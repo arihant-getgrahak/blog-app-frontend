@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import ReduxProvider from "@/redux/provider";
-import { Algolia } from "@/helper/Algolia";
+import { Algolia } from "@/helper/algolia";
 
 export const metadata: Metadata = {
   title: "Create Next App",

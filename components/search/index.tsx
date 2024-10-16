@@ -28,7 +28,7 @@ const Search = () => {
           <input
             id="algolia_search"
             type="search"
-            placeholder="Search for articles!"
+            placeholder="Search for blogs!"
             value={query}
             onChange={handleSearch}
           />

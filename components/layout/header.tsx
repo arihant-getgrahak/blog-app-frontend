@@ -49,6 +49,7 @@ export const Header = () => {
         <div>
           {isAuthenticated ? (
             <div className="flex gap-4">
+              <Link className="text-blue-700 underline text-lg" href="/blog">Blog</Link>
               <Search />
               <button
                 className="hidden rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-teal-700 lg:block"

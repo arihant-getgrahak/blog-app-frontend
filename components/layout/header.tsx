@@ -5,8 +5,8 @@ import { RootState } from "@/redux/store";
 import { logout } from "@/redux/userProfile";
 import { useSelector, useDispatch } from "react-redux";
 import Link from "next/link";
+import  Search  from "@/components/search";
 
-// Create a separate LoginButton component
 const LoginButton = () => {
   return (
     <Link
@@ -18,7 +18,6 @@ const LoginButton = () => {
   );
 };
 
-// Create a separate RegisterButton component
 const RegisterButton = () => {
   return (
     <Link
@@ -49,15 +48,19 @@ export const Header = () => {
         </Link>
         <div>
           {isAuthenticated ? (
-            <button
-              className="hidden rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-teal-700 lg:block"
-              onClick={onLogout}
-            >
-              Logout
-            </button>
+            <div className="flex gap-4">
+              <Search />
+              <button
+                className="hidden rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-teal-700 lg:block"
+                onClick={onLogout}
+              >
+                Logout
+              </button>
+            </div>
           ) : (
             <>
               <div className="flex gap-4">
+                <Search />
                 <LoginButton />
                 <RegisterButton />
               </div>

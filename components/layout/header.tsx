@@ -5,7 +5,7 @@ import { RootState } from "@/redux/store";
 import { logout } from "@/redux/userProfile";
 import { useSelector, useDispatch } from "react-redux";
 import Link from "next/link";
-import  Search  from "@/components/search";
+import Search from "@/components/search";
 
 const LoginButton = () => {
   return (
@@ -60,6 +60,7 @@ export const Header = () => {
           ) : (
             <>
               <div className="flex gap-4">
+                <Link className="text-blue-700 underline text-lg" href="/blog">Blog</Link>
                 <Search />
                 <LoginButton />
                 <RegisterButton />
